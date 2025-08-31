@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lawyer Legal - Landing Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .hero-section {
+      background: url(h1_hero1.jpg) center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-content h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .practice-card {
+      transition: all 0.3s;
+    }
+    .practice-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 5px 20px rgba(0,0,0,0.15);
+    }
+    .testimonial {
+      background: #f8f9fa;
+    }
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .footer {
+      background: #111;
+      color: #fff;
+      padding: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">LawyerLegal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#practice">Practice Areas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonial">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section d-flex">
+  <div class="container text-center hero-content">
+    <h1>Special Approach Dedicated Attorney</h1>
+    <p class="lead">We provide expert legal services to help you achieve justice.</p>
+    <a href="#contact" class="btn btn-primary btn-lg">Book an Appointment</a>
+  </div>
+</section>
+
+
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/about1.jpg" class="img-fluid rounded" alt="About">
+      </div>
+      <div class="col-md-6">
+        <h2>About Our Firm</h2>
+        <p>With years of experience, we are committed to providing the best legal services for our clients. Our team of experts ensures personalized attention and guidance.</p>
+      Reuben Sandwich - CEO of Colorlib
+      <br>
+      <img src="signature.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Practice Areas -->
+<section id="practice" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Our Practice Areas</h2>
+      <p>We offer a wide range of legal services.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card practice-card h-100 text-center p-3">
+          <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/services1.jpg" class="card-img-top rounded" alt="Family Law">
+          <div class="card-body">
+            <h5>Family Law</h5>
+            <p>Protecting your family interests with care.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card practice-card h-100 text-center p-3">
+          <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/services2.jpg" class="card-img-top rounded" alt="Corporate Law">
+          <div class="card-body">
+            <h5>Corporate Law</h5>
+            <p>Helping businesses with legal compliance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card practice-card h-100 text-center p-3">
+          <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/services3.jpg" class="card-img-top rounded" alt="Accidental Law">
+          <div class="card-body">
+            <h5>Accidental Law</h5>
+            <p>Ensuring justice for accident victims.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card practice-card h-100 text-center p-3">
+          <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/services4.jpg" class="card-img-top rounded" alt="Finance Law">
+          <div class="card-body">
+            <h5>Finance Law</h5>
+            <p>Expert legal advice for financial matters.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Testimonials -->
+<section id="testimonial" class="testimonial py-5">
+  <div class="container text-center">
+    <h2 class="mb-5">What Clients Say</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded h-100">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Client" class="mb-3">
+          <p>“This law firm provided excellent service and care throughout my case.”</p>
+          <h6>Reuben Sandwich</h6>
+          <small>CEO, Colorlib</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded h-100">
+          <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="Client" class="mb-3">
+          <p>“Highly professional team, they handled everything smoothly.”</p>
+          <h6>Anna Johnson</h6>
+          <small>Business Owner</small>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-4 bg-white shadow rounded h-100">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="mb-3">
+          <p>“They guided me every step of the way and got me justice.”</p>
+          <h6>David Miller</h6>
+          <small>Client</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Blog Section -->
+<section id="blog" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2>Recent News</h2>
+      <p>Stay updated with our latest insights and articles.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/blog1.jpg" class="card-img-top" alt="Blog 1">
+          <div class="card-body">
+            <h5 class="card-title">Tax Information</h5>
+            <p class="card-text">Latest tax regulations explained for businesses and individuals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/blog2.jpg" class="card-img-top" alt="Blog 2">
+          <div class="card-body">
+            <h5 class="card-title">Legal Advice</h5>
+            <p class="card-text">Get practical legal advice from experienced attorneys.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="https://preview.colorlib.com/theme/lawyerlegal/assets/img/gallery/blog3.jpg" class="card-img-top" alt="Blog 3">
+          <div class="card-body">
+            <h5 class="card-title">Business Law</h5>
+            <p class="card-text">Understanding corporate policies and business regulations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2>Contact Us</h2>
+    <p>Call For a Free Consulting: <strong>(89) 673 378-309</strong></p>
+    <a href="mailto:info@example.com" class="btn btn-dark btn-lg">Send Email</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p>© 2025 LawyerLegal. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
